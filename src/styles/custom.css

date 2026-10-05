@@ -1,0 +1,11 @@
+/* Custom styling for PhysicsVerse */
+
+/* Hide 2nd Paper sidebar when inside 1st Paper routes */
+html[data-current-path*="/paper-1/"] .sidebar-content > ul > li:nth-child(2) {
+  display: none !important;
+}
+
+/* Hide 1st Paper sidebar when inside 2nd Paper routes */
+html[data-current-path*="/paper-2/"] .sidebar-content > ul > li:nth-child(1) {
+  display: none !important;
+}
