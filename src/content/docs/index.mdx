@@ -1,40 +1,41 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: PhysicsVerse
+description: The Pioneer Physics Solving Hub of Bangladesh
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: থিওরি থেকে বুয়েট — এইচএসসি ও ভর্তি পরীক্ষার পূর্ণাঙ্গ উন্মুক্ত পদার্থবিজ্ঞান ইকোসিস্টেম।
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: পদার্থবিজ্ঞান ১ম পত্র
+      link: /paper-1/chapter-02/vector-properties/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+    - text: পদার্থবিজ্ঞান ২য় পত্র
+      link: /paper-2/chapter-07/em-spectrum/
+      icon: right-arrow
+      variant: secondary
+    - text: গিটহাব রিপোজিটরি
+      link: https://github.com/PhysicsVerse/PhysicsVerse.github.io
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## PhysicsVerse-এ যা যা থাকছে
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="পূর্ণাঙ্গ থিওরি ও প্রমাণ" icon="open-book">
+    এনসিটিবি অনুমোদিত শীর্ষস্থানীয় বইসমূহের আলোকে প্রতিটি সূত্রের বিস্তারিত ব্যাখ্যা ও প্রমাণ।
+  </Card>
+  <Card title="জ্ঞান ও অনুধাবন প্রশ্নব্যাংক" icon="pencil">
+    বিগত বছরের এইচএসসি বোর্ড পরীক্ষার সকল 'ক' ও 'খ' প্রশ্নের মানসম্মত উত্তর।
+  </Card>
+  <Card title="বুয়েট ও ভার্সিটি ইঞ্জিন" icon="rocket">
+    ক্যালকুলাস ভিত্তিক অ্যাডভান্সড কনসেপ্ট এবং ক্যালকুলেটর-লেস ট্রিকস সংবলিত সমস্যা সমাধান।
+  </Card>
+  <Card title="উন্মুক্ত প্ল্যাটফর্ম (Open-Source)" icon="github">
+    সম্পূর্ণ বিনামূল্যে সবার জন্য উন্মুক্ত। যেকোনো শিক্ষার্থী বা শিক্ষক চাইলে কনটেন্টে অবদান রাখতে পারবেন।
+  </Card>
 </CardGrid>
