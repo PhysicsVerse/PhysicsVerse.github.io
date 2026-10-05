@@ -10,15 +10,11 @@ export default defineConfig({
     starlight({
       title: 'PhysicsVerse',
       description: 'The Pioneer Physics Solving Hub of Bangladesh — Complete HSC & Admission Solution',
-      social: [
-        {
-          icon: 'github',
-          label: 'GitHub',
-          href: 'https://github.com/PhysicsVerse/PhysicsVerse.github.io',
-        },
-      ],
+      social: [],
+      credits: false,
       customCss: [
         'katex/dist/katex.min.css',
+        './src/styles/custom.css',
       ],
       sidebar: [
         {
