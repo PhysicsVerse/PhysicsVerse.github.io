@@ -1,0 +1,93 @@
+:root {
+  --ifm-font-family-base: 'Hind Siliguri', 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* কসমিক স্পেস কালার সিস্টেম */
+  --space-bg: #030712;
+  --card-bg: rgba(15, 23, 42, 0.75);
+  --card-border: rgba(56, 189, 248, 0.18);
+  
+  --ifm-color-primary: #00f2fe;
+  --ifm-color-primary-dark: #00c6ff;
+  --ifm-background-color: #030712;
+  --ifm-heading-color: #ffffff;
+  --ifm-font-color-base: #e2e8f0;
+}
+
+/* পুরো সাইটের ডিপ স্পেস ও অরোরা ব্যাকগ্রাউন্ড */
+body {
+  background-color: var(--space-bg) !important;
+  color: #e2e8f0 !important;
+  font-family: var(--ifm-font-family-base);
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  background-color: #030712 !important;
+  background-image: 
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(0, 242, 254, 0.14) 0%, transparent 60%),
+    radial-gradient(circle at 10% 45%, rgba(192, 132, 252, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 70%, rgba(251, 191, 36, 0.08) 0%, transparent 40%) !important;
+  background-attachment: fixed !important;
+}
+
+/* অপ্রয়োজনীয় নেভবার ও সাইডবার বন্ধ */
+.navbar, .theme-doc-sidebar-container {
+  display: none !important;
+}
+
+/* ডকুমেন্ট রিডিং এরিয়া এবং টেক্সট কন্ট্রাস্ট ফিক্স */
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Main-styles-module,
+main.docMainContainer {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 1.2rem 6rem 1.2rem !important;
+  color: #e2e8f0 !important;
+}
+
+/* হেডিং ও টেক্সট উজ্জ্বলতা */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+  letter-spacing: -0.01em;
+}
+
+p, li {
+  color: #cbd5e1 !important;
+  line-height: 1.7;
+}
+
+/* কসমিক স্ক্রলবার */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f2fe, #c084fc);
+  border-radius: 999px;
+}
+/* কুইজ ও ডক পেজ ফুল উইডথ ও সুন্দর সেন্টারিং */
+.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Main-styles-module,
+main.docMainContainer,
+.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module,
+.theme-doc-markdown {
+  max-width: 1100px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* ডানপাশের অদৃশ্য ফাঁকা TOC সাইডবার দূর করা যাতে কন্টেন্ট পুরো জায়গা পায় */
+.col--3,
+.theme-doc-toc-desktop,
+.theme-doc-toc-mobile {
+  display: none !important;
+}
+
+.col--9,
+.col--8 {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
